@@ -1,23 +1,45 @@
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Opens Sans", "Source Sans Pro", sans-serif;
     background-color: #00384A;
     color: #FFFFFF;
 }
 
-nav {
-    color: #FFFFFF;
+nav { 
+
 }
 
 li {
     display: inline; 
-    margin-right: 10px;
+    margin-right: 20px;
+    
+}
+
+a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+nav a:hover {
+    font-weight: bolder;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
 
 
+p {
+    text-align: center;
+    color: #FFFFFF;
 }
 
 
 
 footer {
     color: #FFFFFF;
+    text-align: center;
 
 }
