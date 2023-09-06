@@ -1,0 +1,23 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #00384A;
+    color: #FFFFFF;
+}
+
+nav {
+    color: #FFFFFF;
+}
+
+li {
+    display: inline; 
+    margin-right: 10px;
+
+
+}
+
+
+
+footer {
+    color: #FFFFFF;
+
+}
