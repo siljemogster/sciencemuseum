@@ -2,7 +2,16 @@ body {
     font-family: "Roboto", "Opens Sans", "Source Sans Pro", sans-serif;
     background-color: #00384A;
     color: #FFFFFF;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+  
+
 }
+
 
 nav { 
     
@@ -38,9 +47,55 @@ h1 {
 
 
 p {
-    text-align: center;
     color: #FFFFFF;
 }
+
+
+.container {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto; 
+    grid-gap: 30px; 
+    padding-left: 100px; 
+    padding-right: 100px;
+    padding-top: 50px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+
+}
+
+.grid-item-2,
+.grid-item-4,
+.grid-item-6 {
+    text-align: left;
+    width: 300px; 
+
+}
+
+.grid-item-1,
+.grid-item-3,
+.grid-item-5 {
+    
+   
+}
+
+
+
+
+  
+
+
+
+
 
 
 footer {
@@ -67,3 +122,36 @@ footer {
     text-transform: capitalize; 
 
 }
+
+@media (min-width: 40em) {
+    body {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        'header header'
+        'main main'
+        'footer footer'
+        ;
+
+
+    }
+
+    header {
+        grid-column: span 2; 
+    }
+
+    footer {
+        grid-column: span 2;    
+    }
+
+} 
+
+
+header { grid-area: header; }
+main { grid-area: main; }
+footer { grid-area: footer; }
+
+
+    
+ 
+
