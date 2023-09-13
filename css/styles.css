@@ -8,6 +8,7 @@ body {
 
 ul {
     text-align: right;
+    display: inline;
 
 }
 
@@ -67,6 +68,7 @@ h2 {
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 40px;
+
 }
 
 .grid-item-2 { 
@@ -113,24 +115,28 @@ h2 {
 .grid-container-1 {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: auto auto auto auto auto;
-    min-height: 100vh; 
-    grid-column-gap: 10px; 
-    grid-row-gap: 20px; 
+    grid-template-rows: auto auto auto auto auto; 
+    grid-row-gap: 10px; 
+    grid-column-gap: 10px;
     background-color: white; 
     color: black;
+
+
     
 }
 
 
-.grid-item-1-1 {
-    grid-column: span 6; 
+
+
+.header {
+    padding: 30px; 
    
 
 }
 
 .grid-item-1-2 {
     grid-column-start: 2;
+    padding-top: 50px;
    
  
 
@@ -139,7 +145,8 @@ h2 {
 .grid-item-1-3 {
     grid-column-start: 2;
     display: flex; 
-    justify-content: left; 
+    justify-content: left;
+    
 
 
 }
@@ -179,6 +186,12 @@ h2 {
 
 }
 
+.test-1-3 {
+    display: inline;
+
+
+}
+
 
 .grid-container-2 {
     display: grid; 
@@ -191,6 +204,8 @@ h2 {
     color: white; 
     
 }
+
+
 
 .grid-item-2-1 {
     grid-column: span 6; 
@@ -235,8 +250,6 @@ h2 {
     display: none; 
   
  
- 
-
 }
 
 .grid-item-2-7 {
@@ -287,6 +300,8 @@ footer {
         display: grid; 
         grid-template-columns: 1fr; 
         grid-template-rows: auto 1fr auto;
+        width: auto;
+        
        
     }
 
@@ -333,7 +348,7 @@ footer {
     }
 
     .grid-item-1-2 {
-        grid-column-start: 2; 
+        grid-column-start: 3; 
     }
 
     .grid-item-1-3,
@@ -344,7 +359,40 @@ footer {
     }
 
     .grid-item-1-6 {
-        display: block; 
+        grid-column-start: 2; 
+        grid-column-end: 5; 
+        display: flex;
+        justify-content: center;
+        
+        
+        
+    
+    
+    }
+
+
+    .grid-item-1-7 {
+        text-align: center;
+
+        
+    }
+
+    .grid-item-2-1 {
+        grid-column: span 6; 
+    }
+
+    .grid-item-2-2 {
+        grid-column-start: 2; 
+    }
+
+    .grid-item-2-3,
+    .grid-item-2-4,
+    .grid-item-2-5 {
+        display: none; 
+         
+    }
+
+    .grid-item-2-6 {
         grid-column-start: 2; 
         grid-column-end: 5; 
         display: flex;
@@ -354,11 +402,13 @@ footer {
     }
 
 
-    .grid-item-1-7 {
-        grid-template-columns: span 6;
+    .grid-item-2-7 {
+        grid-column-start: 2;
+        grid-column-end: 5;
 
         
     }
+
 
    
 
@@ -367,7 +417,7 @@ footer {
 
 
 
-
+ 
 
 
 
