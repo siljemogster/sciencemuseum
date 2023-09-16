@@ -570,8 +570,10 @@ footer {
 
     .grid-item-3-8 {
         grid-column: span 8;
-        height: auto; 
-        width: auto;
+        width: auto; 
+        height: auto;
+     
+       
 
         
     }
@@ -579,16 +581,20 @@ footer {
 
     .grid-item-3-9 {
         grid-column: span 8;
-        height: auto; 
-        width: auto;
+        width: auto; 
+        height: auto;
+       
+       
         
     }
 
 
     .grid-item-3-10 {
         grid-column: span 8;
-        height: auto; 
-        width: auto;
+        width: auto; 
+        height: auto;
+       
+
         
     }
 
