@@ -132,11 +132,12 @@ footer {
 
 .container {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-row-gap: 30px; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto; 
     padding-top: 20px; 
-    padding-bottom: 20px; 
+    grid-row-gap: 30px; 
+    padding-bottom: 20px;
+    grid-column-gap: 20px; 
 }
 
 
@@ -173,9 +174,61 @@ footer {
 }
 
 
+.container-item-0-1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: white;
+    color: black; 
+    padding: 50px; 
+    text-align: center;
+    grid-column-gap: 20px; 
+
+}
+
+.container-item-0-1-1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex; 
+    justify-content: center;
+}
+
+.container-item-0-1-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    background-color: #E8BE2C;
+    padding: 10px; 
+    text-transform: uppercase;
+    
+    
+
+}
+
+.container-item-0-2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background: white;
+    color: black; 
+    padding: 50px; 
+    text-align: center;
+    grid-gap: 20px; 
+    
+}
+
+.container-item-0-3 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    background: white;
+    color: black; 
+    padding: 50px; 
+    text-align: center;
+    grid-column-gap: 20px;
+    
+}
+
 .container-item-1 {
     grid-column-start: 1; 
-    grid-column-end: 7; 
+    grid-column-end: 9; 
     grid-row-start: 1;
     grid-row-end: 18;
     background-image: url(images/home/community_science_museum_simulator_cosmology_background.jpg);  
@@ -188,7 +241,7 @@ footer {
 .container-item-2 {
     text-align: center;
     grid-column-start: 2;
-    grid-column-end: 6; 
+    grid-column-end: 8; 
     color: white; 
     font-size: 22px; 
 }
@@ -197,15 +250,15 @@ footer {
 .container-item-3 {
     text-align: center;
     grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-end: 8;
     color: white; 
 }
 
 .container-item-4 {
     grid-column-start: 1; 
-    grid-column-end: 7; 
-    grid-row-start: 20;
-    grid-row-end: 32;
+    grid-column-end: 9; 
+    grid-row-start: 22;
+    grid-row-end: 30;
     background-image: url(images/home/scienceisfun_girl_with_numbers_background.jpg);  
     background-size: cover; 
     background-repeat: no-repeat; 
@@ -214,15 +267,17 @@ footer {
 
 .container-item-5 {
     grid-column-start: 2;
-    grid-column-end: 4;
-    background: white;
-    display: flex; 
-    justify-content: left;
+    grid-column-end: 5;
+    background: white; 
+    display: flex;
+    justify-content: center; 
+
+    
 }
 
 .container-item-6 {
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 8;
     background: white;
     color: black; 
     padding: 50px; 
@@ -231,8 +286,8 @@ footer {
 
 
 .container-item-7 {
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 8;
     background: white;
     color: black; 
     padding: 50px; 
@@ -242,7 +297,7 @@ footer {
 
 .container-item-8 {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     background: white;
     display: flex; 
     justify-content: left;
@@ -250,15 +305,15 @@ footer {
 
 .container-item-9 {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     background: white;
     display: flex; 
     justify-content: left;
 }
 
 .container-item-10 {
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 8;
     background: white;
     color: black;
     padding: 50px; 
@@ -399,7 +454,7 @@ footer {
 
     .container-item-3 {
         grid-column-start: 1; 
-        grid-column-end: 7;
+        grid-column-end: 9;
         padding-left: 20%; 
         padding-right: 20%;
     }
@@ -407,12 +462,14 @@ footer {
 
     .container-item-5 {
         grid-column-start: 1; 
-        grid-column-end: 7;
+        grid-column-end: 9;
         display: flex; 
         justify-content: center;
         padding-left: 20%; 
         padding-right: 20%; 
         background:#00384A; 
+
+        
     }
 
     .container-item-6 {
