@@ -2,28 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Science Museum</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="stylenew.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="exhibition.html">Exhibition</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="visit.html">Visit</a></li>
-                <li><a href="getinvolved.html">Get Involved</a></li>
+            <ul class="nav-bar">
+                <li class="logo"><a href="#"><img src="images/logo/logo_science_museum.png" alt="Logo of Community Science Museum"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Exhibition</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Visit</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
         </nav>
     </header>
     <main>
         <div class="container">
             <div class="container-item-1">
-                <img src="images/home/community_science_museum_simulator_cosmology_background1.jpg" alt="Full equiped person in Simulator">
             </div>
-
             <div class="container-item-2">
                 <h1>Community Science Museum</h1>
                 <p>Let's explore together</p>
@@ -36,19 +42,22 @@
                 </p>
                 <br><button type="button" class="button">View All Exhibitions</button></br>
             </div>
-
             <div class="container-item-4">
-                <img src="images/home/scienceisfun_girl_with_numbers_background.jpg" alt="Girl and numbers">
             </div>
-
+            <div class="container-item-3">
+                <h2>Explore more</h2>
+            </div>
             <div class="container-item-5">
                 <img src="images/home/boy_experiment.jpg" alt="Boy experiement">
             </div>    
-
             <div class="container-item-6">
                 <h3>For kids</h3>
                 <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore</p>
                 <br><buttontype="button" class="button">Learn more</button></buttontype></br>
+            </div>
+
+            <div class="container-item-8">
+                <img src="images/home/explore_for_teachers1.jpg" alt="Teacher showing experiment">
             </div>
 
             <div class="container-item-7">
@@ -57,10 +66,7 @@
                 <br><buttontype="button" class="button">Learn more</button></buttontype></br>
             </div>    
 
-            <div class="container-item-8">
-                <img src="images/home/explore_for_teachers1.jpg" alt="Teacher showing experiment">
-            </div> 
-
+        
             <div class="container-item-9">
                 <img src="images/home/getinvolved_volunteer1.jpg" alt="Researcher checking results">
             </div>
@@ -72,13 +78,12 @@
             </div>
         </div>
     </main>
-
     <footer>
         <div class="footer">
             <p>Let's stay in touch</p>
         </div>
-        <div class="socialicons">
-            <ul>
+        <div>
+            <ul class="social">
                 <li><a href="https://instagram.com" target="_blank">
                     <img src="images/icons/instagramicon.png"></a></li>
                 <li><a href="https://facebook.com" target="_blank">
@@ -91,5 +96,6 @@
             <p>&copy; 2023 Community Science Museum</p>
         </div>
     </footer>
+    
 </body>
 </html>
