@@ -1,7 +1,5 @@
 # Community Science Museum 
 
-![Community Sience Musem Website](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
-
 A youth-friendly and playful website for a science museum, designed to appeal to middle school children (ages 7-15) and families with young children.
 
 ## Description
